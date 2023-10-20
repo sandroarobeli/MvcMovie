@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MvcMovie.Models;
 using System.Diagnostics;
+using System.Text.Encodings.Web;
+using System.Xml.Linq;
 
 namespace MvcMovie.Controllers
 {
@@ -12,6 +14,7 @@ namespace MvcMovie.Controllers
         {
             _logger = logger;
         }
+
 
         public IActionResult Index()
         {
